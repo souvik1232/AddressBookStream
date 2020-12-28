@@ -9,6 +9,10 @@ public class AddressService implements IAddress {
     ArrayList<Address> book =new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
+    public void createAddressBook(){
+
+    }
+
     @Override
     public void add() {
 
@@ -27,7 +31,16 @@ public class AddressService implements IAddress {
         addressService.setZip(scanner.nextInt());
         System.out.println("Enter your phone number");
         addressService.setPhone(scanner.next());
-        book.add(addressService);
+        book.stream().forEach( n ->{
+            if (n.getFirstname().equals(addressService.getFirstname())){
+                System.out.println("Duplicate");
+            }
+            else {
+                book.add(addressService);
+            }
+        });
+        if(book.size()==0)
+            book.add(addressService);
     }
 
     @Override
@@ -90,4 +103,40 @@ public class AddressService implements IAddress {
             }
         }
     }
+
+//    @Override
+//    public void Search() {
+//        System.out.println("Search Preferance:1.City  2.State");
+//        int input = scanner.nextInt();
+//        if(input == 1) {
+//            String temp=null;
+//            System.out.println("Enter the City whose record u want to display");
+//            temp=scanner.next();
+//            if (book.stream().count()==0) {
+//                System.out.println("No records to Show");
+//                return;
+//            }
+//            String finalTemp = temp;
+//            book.stream().forEach(n->{
+//                if (n.getCity().equals(finalTemp))
+//                    System.out.println(n.getFirstname());
+//            });
+//        }
+//        else {
+//            String temp=null;
+//            System.out.println("Enter the State whose record u want to display");
+//            temp=scanner.next();
+//            if(book.stream().count()==0)
+//            {
+//                System.out.println("No records to Show");
+//                return;
+//            }
+//            String finalTemp = temp;
+//            book.stream().forEach(n->{
+//                if (n.getState().equals(finalTemp))
+//                    System.out.println(n.getFirstname());
+//            });
+//        }
+//
+//    }
 }

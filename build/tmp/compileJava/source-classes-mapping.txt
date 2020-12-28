@@ -1,8 +1,8 @@
+com/module/Address.java
+ com.module.Address
 com/controller/AddressBook.java
  com.controller.AddressBook
 com/services/AddressService.java
  com.services.AddressService
-com/module/Address.java
- com.module.Address
 com/services/IAddress.java
  com.services.IAddress

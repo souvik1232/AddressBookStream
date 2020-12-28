@@ -6,4 +6,6 @@ public interface IAddress {
     void edit();
 
     void delete();
+
+//    void Search();
 }

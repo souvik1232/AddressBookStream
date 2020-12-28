@@ -17,6 +17,7 @@ public class AddressBook {
             System.out.println("1.Add a contact");
             System.out.println("2.Edit a contact");
             System.out.println("3.Delete a contact");
+            System.out.println("4.Search City/State wise");
             input = scanner.nextInt();
             switch(input)
             {
@@ -29,6 +30,9 @@ public class AddressBook {
                 case 3:
                     object.delete();
                     break;
+//                case 4:
+//                    object.Search();
+//                    break;
                 default:System.out.println("Invalid option");
             }
             System.out.println("Do you want to continue?(0/1)");
