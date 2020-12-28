@@ -139,4 +139,18 @@ public class AddressService implements IAddress {
         }
 
     }
+    @Override
+    public void displayCity() {
+        book.stream().forEach( n->{
+            System.out.println("City is "+n.getCity()+"& Name is: "+n.getFirstname());
+        });
+    }
+
+    @Override
+    public void displayState() {
+        book.stream().forEach( n->{
+            System.out.println("State is "+n.getState()+"& Name is: "+n.getFirstname());
+        });
+    }
+
 }

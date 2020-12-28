@@ -18,6 +18,8 @@ public class AddressBook {
             System.out.println("2.Edit a contact");
             System.out.println("3.Delete a contact");
             System.out.println("4.Search City/State wise");
+            System.out.println("5.Display City wise");
+            System.out.println("6.Display State wise");
             input = scanner.nextInt();
             switch(input)
             {
@@ -32,6 +34,12 @@ public class AddressBook {
                     break;
                 case 4:
                     object.Search();
+                    break;
+                case 5:
+                    object.displayCity();
+                    break;
+                case 6:
+                    object.displayState();
                     break;
                 default:System.out.println("Invalid option");
             }
