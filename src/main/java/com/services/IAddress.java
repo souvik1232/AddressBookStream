@@ -7,5 +7,5 @@ public interface IAddress {
 
     void delete();
 
-//    void Search();
+    void Search();
 }

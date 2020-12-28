@@ -30,9 +30,9 @@ public class AddressBook {
                 case 3:
                     object.delete();
                     break;
-//                case 4:
-//                    object.Search();
-//                    break;
+                case 4:
+                    object.Search();
+                    break;
                 default:System.out.println("Invalid option");
             }
             System.out.println("Do you want to continue?(0/1)");

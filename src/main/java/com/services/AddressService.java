@@ -104,39 +104,39 @@ public class AddressService implements IAddress {
         }
     }
 
-//    @Override
-//    public void Search() {
-//        System.out.println("Search Preferance:1.City  2.State");
-//        int input = scanner.nextInt();
-//        if(input == 1) {
-//            String temp=null;
-//            System.out.println("Enter the City whose record u want to display");
-//            temp=scanner.next();
-//            if (book.stream().count()==0) {
-//                System.out.println("No records to Show");
-//                return;
-//            }
-//            String finalTemp = temp;
-//            book.stream().forEach(n->{
-//                if (n.getCity().equals(finalTemp))
-//                    System.out.println(n.getFirstname());
-//            });
-//        }
-//        else {
-//            String temp=null;
-//            System.out.println("Enter the State whose record u want to display");
-//            temp=scanner.next();
-//            if(book.stream().count()==0)
-//            {
-//                System.out.println("No records to Show");
-//                return;
-//            }
-//            String finalTemp = temp;
-//            book.stream().forEach(n->{
-//                if (n.getState().equals(finalTemp))
-//                    System.out.println(n.getFirstname());
-//            });
-//        }
-//
-//    }
+    @Override
+    public void Search() {
+        System.out.println("Search Preference:1.City  2.State");
+        int input = scanner.nextInt();
+        if(input == 1) {
+            String temp=null;
+            System.out.println("Enter the City whose record u want to display");
+            temp=scanner.next();
+            if (book.stream().count()==0) {
+                System.out.println("No records to Show");
+                return;
+            }
+            String finalTemp = temp;
+            book.stream().forEach(n->{
+                if (n.getCity().equals(finalTemp))
+                    System.out.println(n.getFirstname());
+            });
+        }
+        else {
+            String temp=null;
+            System.out.println("Enter the State whose record u want to display");
+            temp=scanner.next();
+            if(book.stream().count()==0)
+            {
+                System.out.println("No records to Show");
+                return;
+            }
+            String finalTemp = temp;
+            book.stream().forEach(n->{
+                if (n.getState().equals(finalTemp))
+                    System.out.println(n.getFirstname());
+            });
+        }
+
+    }
 }
