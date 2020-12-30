@@ -140,17 +140,33 @@ public class AddressService implements IAddress {
 
     }
     @Override
-    public void displayCity() {
+    public void displayCityCount() {
         book.stream().forEach( n->{
             System.out.println("City is "+n.getCity()+"& Name is: "+n.getFirstname());
         });
     }
 
     @Override
-    public void displayState() {
+    public void displayStateCount() {
         book.stream().forEach( n->{
             System.out.println("State is "+n.getState()+"& Name is: "+n.getFirstname());
         });
+    }
+    @Override
+    public void sortName() {
+        book.stream().sorted(ComparatorMethod.nameComparator);
+    }
+    @Override
+    public void sortState() {
+        book.stream().sorted(ComparatorMethod.stateComparator);
+    }
+    @Override
+    public void sortCity() {
+        book.stream().sorted(ComparatorMethod.cityComparator);
+    }
+    @Override
+    public void sortZip() {
+        book.stream().sorted(ComparatorMethod.zipComparator);
     }
 
 }

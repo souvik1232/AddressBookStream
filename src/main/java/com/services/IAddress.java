@@ -9,7 +9,15 @@ public interface IAddress {
 
     void Search();
 
-    void displayCity();
+    void displayCityCount();
 
-    void displayState();
+    void displayStateCount();
+
+    void sortName();
+
+    void sortState();
+
+    void sortCity();
+
+    void sortZip();
 }
