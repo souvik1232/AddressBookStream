@@ -21,9 +21,9 @@ public class AddressBook {
             System.out.println("5.Display City wise");
             System.out.println("6.Display State wise");
             System.out.println("7.Sort by First Name");
-//            System.out.println("8.Sort by City");
-//            System.out.println("9.Sort by State");
-//            System.out.println("10.Sort by Zip");
+            System.out.println("8.Sort by City");
+            System.out.println("9.Sort by State");
+            System.out.println("10.Sort by Zip");
             input = scanner.nextInt();
             switch(input)
             {
@@ -48,15 +48,15 @@ public class AddressBook {
                 case 7:
                     object.sortName();
                     break;
-//                case 8:
-//                    object.sortCity();
-//                    break;
-//                case 9:
-//                    object.sortState();
-//                    break;
-//                case 10:
-//                    object.sortZip();
-//                    break;
+                case 8:
+                    object.sortCity();
+                    break;
+                case 9:
+                    object.sortState();
+                    break;
+                case 10:
+                    object.sortZip();
+                    break;
                 default:System.out.println("Invalid option");
             }
             System.out.println("Do you want to continue?(0/1)");

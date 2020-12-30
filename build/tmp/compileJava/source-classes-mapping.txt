@@ -6,3 +6,9 @@ com/services/AddressService.java
  com.services.AddressService
 com/services/IAddress.java
  com.services.IAddress
+com/services/ComparatorMethod.java
+ com.services.ComparatorMethod
+ com.services.ComparatorMethod$1
+ com.services.ComparatorMethod$2
+ com.services.ComparatorMethod$3
+ com.services.ComparatorMethod$4
